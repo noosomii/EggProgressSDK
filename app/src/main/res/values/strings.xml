@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EggLibs</string>
+
+    <string name="progress_name_ring">Progress Dialog</string>
+    <string name="progress_title">Title</string>
+    <string name="progress_message">Message</string>
+    <string name="btn_test_alert_ring">Egg Basic Progress</string>
+    <string name="btn_test_alert_bar">Egg Basic Progress Bar</string>
+    <string name="btn_test_alert_bar_custom">Egg Circular Progress Custom</string>
+    <string name="btn_test_alert_bar_custom_test">Test Dialog Bar Custom Test</string>
+    <string name="btn_test_alert_bar_custom_test_ring">Egg Loading Progress Custom</string>
+    <string name="egg_progress_name">Egg Progress Dialog</string>
+    <string name="egg_progress_linear">Egg Linear Progress</string>
+</resources>

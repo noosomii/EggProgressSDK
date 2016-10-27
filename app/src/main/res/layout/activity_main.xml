@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.eggdigital.egglibs.egglibs.MainActivity">
+
+    <com.eggdigital.android.mylibrary.libs.EggLinearProgress
+        android:id="@+id/linear_progress"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        app:egg_progress_color="@android:color/holo_blue_light" />
+
+    <TextView
+        android:text="@string/progress_name_ring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/progress_title"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txt_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/progress_message"
+        android:inputType="textPersonName"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/btn_test_ring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_test_alert_ring"
+        android:textSize="14sp"
+        android:onClick="openEggBasicProgress"/>
+
+    <Button
+        android:id="@+id/btn_test_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_test_alert_bar"
+        android:textSize="14sp"
+        android:onClick="openEggBasicProgressBar"/>
+
+    <Button
+        android:id="@+id/btn_linear_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/egg_progress_linear"
+        android:textSize="14sp"
+        android:onClick="openEggLinearProgress"/>
+
+    <TextView
+        android:text="@string/egg_progress_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/color_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_test_bar_custom_ring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_test_alert_bar_custom_test_ring"
+        android:textSize="14sp"
+        android:onClick="openEggLoadingProgress"/>
+
+    <Button
+        android:id="@+id/btn_test_bar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_test_alert_bar_custom"
+        android:textSize="14sp"
+        android:onClick="openEggCircularProgress"/>
+
+</LinearLayout>
