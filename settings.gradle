@@ -1,1 +1,1 @@
-include ':app', ':egg-services-progress'
+include ':app', ':egg-services-progress-sdk'
