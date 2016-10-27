@@ -6,7 +6,7 @@ version = '1.0.0' // This is the library version used when deploying the artifac
 group = 'com.eggdigital.android' // Maven Group ID for the artifact
 
 def siteUrl = 'http://eggdigital.com/' // Homepage URL of the library
-def gitUrl = 'https://noosombeckii@bitbucket.org/eggapplication/eggprogress.git' // Git repository URL
+def gitUrl = 'https://github.com/noosomii/EggProgressSDK.git' // Git repository URL
 
 android {
     compileSdkVersion 25
@@ -97,7 +97,7 @@ bintray {
 
     pkg {
         repo = 'maven'
-        name = 'egg-services-progress'
+        name = 'egg-services-progress-sdk'
         userOrg = 'noosombeckii'
         desc = 'An Android SDK for showing Egg Progress Bar.'
         websiteUrl = siteUrl
