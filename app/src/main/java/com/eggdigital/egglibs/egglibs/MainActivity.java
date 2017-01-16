@@ -60,18 +60,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void openEggBasicProgress(View view) {
-        mEggBasicProgress.onShowEggBasicProgress(mTitle.getText().toString(), mMessage.getText().toString(), true);
+        mEggBasicProgress.onShowEggBasicProgress(mTitle.getText().toString(), mMessage.getText().toString(), false);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 mEggBasicProgress.onHideEggBasicProgress();
             }
-        }, 1500);
+        }, 3000);
     }
 
     public void openEggBasicProgressBar(View view) {
         mEggBasicProgress.onShowEggBasicProgressBar(mTitle.getText().toString(),
-                mMessage.getText().toString(), true, MAX);
+                mMessage.getText().toString(), false, MAX);
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -126,13 +126,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void openEggCircularProgress(View view) {
-        mEggCircularProgress.onShowEggProgressCircle(true, color[colorPosition]);
+        mEggCircularProgress.onShowEggProgressCircle(false, color[colorPosition]);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 mEggCircularProgress.onHideEggProgressCircle();
             }
-        }, 1500);
+        }, 3000);
     }
 
     public void openEggLinearProgress(View view) {
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void run() {
                 mEggLinearProgress.setVisibility(View.INVISIBLE);
             }
-        }, 1500);
+        }, 3000);
     }
 
     @Override

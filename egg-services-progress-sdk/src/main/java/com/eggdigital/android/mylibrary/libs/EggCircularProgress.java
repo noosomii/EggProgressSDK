@@ -29,7 +29,7 @@ public class EggCircularProgress {
         mDialogView.setContentView(R.layout.circular_progress);
         mDialogView.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         mDialogView.setCancelable(cancelable);
-        mDialogView.setCanceledOnTouchOutside(true);
+        mDialogView.setCanceledOnTouchOutside(cancelable);
         mDialogView.show();
     }
 
@@ -42,7 +42,7 @@ public class EggCircularProgress {
         progressBar.getIndeterminateDrawable().setColorFilter(color, PorterDuff.Mode.MULTIPLY);
         mDialogView.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         mDialogView.setCancelable(cancelable);
-        mDialogView.setCanceledOnTouchOutside(true);
+        mDialogView.setCanceledOnTouchOutside(cancelable);
         mDialogView.show();
     }
 

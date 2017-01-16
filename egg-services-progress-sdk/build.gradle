@@ -10,7 +10,7 @@ def gitUrl = 'https://github.com/noosomii/EggProgressSDK.git' // Git repository 
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    buildToolsVersion "25.0.1"
 
     defaultConfig {
         minSdkVersion 16
@@ -114,5 +114,5 @@ bintray {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:appcompat-v7:25.1.0'
 }
